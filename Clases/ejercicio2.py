@@ -1,6 +1,10 @@
 import os
 import time
 class Entrada:
+    def __init__ (self, mensaje):
+        self.mensaje = mensaje
+    def mensaje(self):
+        return self.mensaje
     def entrada_estandar():
         mensaje=str(input("Qué mensaje quieres escribir\n"))
         mensajefinal= mensaje.upper()
