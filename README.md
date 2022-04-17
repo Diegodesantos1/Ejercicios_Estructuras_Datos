@@ -72,7 +72,7 @@ def visitante(eleccion_visitante):
         alternativa.bucle()
     else:
         print("No válido.")
-        visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue\n\n")))
+        visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado \n\n 2: Bucle de la clase MientrasQue\n\n")))
 ```
 
 Su UML:
