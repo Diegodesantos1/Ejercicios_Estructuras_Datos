@@ -58,10 +58,10 @@ def visitante(eleccion_visitante):
         alternativa = Si(2+2 == 4, ok, ko)
         alternativa.ejecutar()
     elif eleccion_visitante == 2:
-        alternativa = MientrasQue(int(input("Introduzca cuántas veces quiere ejecutar el bucle:")), input(
-            "Introduzca el texto que desee:"))
+        alternativa = MientrasQue(int(input("Introduzca cuántas veces quiere ejecutar el bucle:\n")), input(
+            "Introduzca el texto que desee:\n"))
         alternativa.bucle()
     else:
         print("No válido.")
-        visitante(input(
-            "Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue"))
+        visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue\n\n")))
+visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue\n\n")))
