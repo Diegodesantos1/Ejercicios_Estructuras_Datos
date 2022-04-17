@@ -18,15 +18,15 @@ class Productos:
         if eleccion == 1:
             precio_final = round(precio_inicial * 1.04)
             print(f"La compra de ha realizado correctamente, le ha costado {precio_final}€")
-            exit()
+            Productos.iva ()
         if eleccion == 2:
             precio_final = round(precio_inicial * 1.21)
             print(f"La compra de ha realizado correctamente, le ha costado {precio_final}€")
-            exit()
+            Productos.iva ()
         if eleccion == 3:
             precio_final =round( precio_inicial * 1.1)
             print(f"La compra de ha realizado correctamente, le ha costado {precio_final}€")
-            exit()
+            Productos.iva ()
         else:
             print("Opción no válida")
             exit()
