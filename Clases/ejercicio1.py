@@ -52,16 +52,15 @@ class Mostrar:
         print(self.mensaje)
 
 def visitante(eleccion_visitante):
-    if eleccion_visitante == 1:
+    if eleccion_visitante =="A":
         ok = "OK"
         ko = "KO"
         alternativa = Si(2+2 == 4, ok, ko)
         alternativa.ejecutar()
-    elif eleccion_visitante == 2:
+    elif eleccion_visitante == "B":
         alternativa = MientrasQue(int(input("Introduzca cuántas veces quiere ejecutar el bucle:\n")), input(
             "Introduzca el texto que desee:\n"))
         alternativa.bucle()
     else:
         print("No válido.")
         visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue\n\n")))
-visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue\n\n")))
