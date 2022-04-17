@@ -37,6 +37,11 @@ class MientrasQue:
     def __init__(self, condicion, bloque):
         self.condicion = condicion
         self.bloque = bloque
+    def bucle(self):
+        variable1 = 1
+        while variable1 <= self.condicion:
+            Mostrar(self.bloque).mostrar()
+            variable1 += 1
 
 
 class Mostrar:
