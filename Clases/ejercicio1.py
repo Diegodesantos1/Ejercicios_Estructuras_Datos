@@ -1,3 +1,6 @@
+from http.client import OK
+
+
 class Bloque:
     # Un bloque es un conjunto de instrucciones ejecutadas
     # unas detrás de otras.
@@ -7,19 +10,16 @@ class Bloque:
     def agregarInstruction(self, instruccion):
         self.instrucciones.append(instruccion)
 
-
 class Si:
     # Representa una instrucción 'if'. 'condicion' es una cadena
     # de caracteres que contiene la evaluación de la condición,
     # 'entonces' es el bloque de instrucciones ejecutadas si la condición
     # se verifica, 'si_no' es el bloque de instrucciones ejecutadas
     # si no se verifica.
-
     def __init__(self, condicion, entonces, si_no):
         self.condicion = condicion
         self.entonces = entonces
         self.si_no = si_no
-
     def ejecutar(self):
         entonces = self.entonces
         si_no = self.si_no
@@ -43,12 +43,25 @@ class MientrasQue:
             Mostrar(self.bloque).mostrar()
             variable1 += 1
 
-
 class Mostrar:
     # Una instrucción para mostrar un mensaje
     # en salida estándar.
     def __init__(self, mensaje):
         self.mensaje = mensaje
-
     def mostrar(self):
         print(self.mensaje)
+
+def visitante(eleccion_visitante):
+    if eleccion_visitante == 1:
+        ok = "OK"
+        ko = "KO"
+        alternativa = Si(2+2 == 4, ok, ko)
+        alternativa.ejecutar()
+    elif eleccion_visitante == 2:
+        alternativa = MientrasQue(int(input("Introduzca cuántas veces quiere ejecutar el bucle:")), input(
+            "Introduzca el texto que desee:"))
+        alternativa.bucle()
+    else:
+        print("No válido.")
+        visitante(input(
+            "Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue"))
