@@ -4,7 +4,6 @@ class Bloque:
     def __init__(self):
         # Por defecto, un bloque no contiene ninguna instrucción.
         self.instrucciones = []
-
     def agregarInstruction(self, instruccion):
         self.instrucciones.append(instruccion)
 
