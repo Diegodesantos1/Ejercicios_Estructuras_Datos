@@ -24,7 +24,6 @@ class Si:
     def ejecutar(self):
         entonces = self.entonces
         si_no = self.si_no
-
         if self.condicion == True:
             Mostrar(entonces).mostrar()
         else:
