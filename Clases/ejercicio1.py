@@ -1,5 +1,3 @@
-from http.client import OK
-
 
 class Bloque:
     # Un bloque es un conjunto de instrucciones ejecutadas
