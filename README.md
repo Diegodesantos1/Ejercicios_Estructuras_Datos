@@ -74,6 +74,13 @@ def visitante(eleccion_visitante):
         print("No válido.")
         visitante(int(input("Si desea ejecutar: \n\n 1: Ejemplo del enunciado 1 \n\n 2: Bucle de la clase MientrasQue\n\n")))
 ```
+
+Su UML:
+
+![image](https://user-images.githubusercontent.com/91721855/163720666-79510564-6e94-408a-83b8-42105955bd21.png)
+
+En formato [XML](https://github.com/Diegodesantos1/Ejercicios_Estructuras_Datos/blob/main/UML/Ejercicio1.drawio)
+
 ## Ejercicio 2
 
 En este ejercicio he aplicado MVC para generar un archivo de texto que devuelva una cadena de texto introducida en mayúsculas.
@@ -99,6 +106,13 @@ class Entrada:
         os.remove("Ejercicio2.txt")
 Entrada.entrada_estandar()
 ```
+
+Su UML:
+
+![image](https://user-images.githubusercontent.com/91721855/163720720-6424389c-5e93-4f74-8b50-4d5f5ef78583.png)
+
+En formato [XML](https://github.com/Diegodesantos1/Ejercicios_Estructuras_Datos/blob/main/UML/Ejercicio2.drawio)
+
 ## Ejercicio 3
 
 En este ejercicio había que implementar la tasa de IVA correspondiente en función del producto.
@@ -140,3 +154,10 @@ class Productos:
             exit()
 Productos.iva()
 ```
+
+Su UML:
+
+![image](https://user-images.githubusercontent.com/91721855/163720757-2d34eba4-e375-442e-89ff-db3d8947828a.png)
+
+
+En formato [XML](https://github.com/Diegodesantos1/Ejercicios_Estructuras_Datos/blob/main/UML/Ejercicio3.drawio)
